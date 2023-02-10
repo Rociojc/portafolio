@@ -9,10 +9,10 @@ import { SocialMedia } from "../components/molecules/SocialMedia";
 export const Home = () => {
   return (
     <div>
+      <Header color="lightSteelBlue">
+        <Navigation type="icono" />
+      </Header>
       <Portada color="lightSteelBlue">
-        <Header>
-          <Navigation type="icono" />
-        </Header>
         <InfoPortada>
           <TituloPortada>
             <Text type="h1" color="indianRed" text="Rocio Jimenez" />
@@ -34,7 +34,7 @@ export const Home = () => {
         </div>
         <Carousel />
       </MainContainer>
-      <hr style={{ width: "95%", margin: "auto"}} />
+      <hr style={{ width: "95%", margin: "auto" }} />
       <FooterContainer>
         <SocialMedia />
       </FooterContainer>

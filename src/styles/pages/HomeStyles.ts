@@ -1,21 +1,21 @@
 import styled from "styled-components";
 
-export const Portada = styled.div`
-    // border: 1px solid black;
-
-    width: 100%;
-    height: 400px;
-    background-color: ${props => props.color};
-    padding: 20px;
-`
-
 export const Header = styled.header`
     // border: 1px solid black;
 
     display: flex;
     justify-content: center;
-    padding: 10px 0;
-    margin-bottom: 20px;
+    background-color: ${props => props.color};
+    padding: 30px 20px 20px;
+`
+
+export const Portada = styled.div`
+    // border: 1px solid black;
+
+    width: 100%;
+    height: 330px;
+    background-color: ${props => props.color};
+    padding: 20px;
 `
 
 export const InfoPortada = styled.div`
