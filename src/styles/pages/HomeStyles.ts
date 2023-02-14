@@ -1,14 +1,5 @@
 import styled from "styled-components";
 
-export const Header = styled.header`
-    // border: 1px solid black;
-
-    display: flex;
-    justify-content: center;
-    background-color: ${props => props.color};
-    padding: 30px 20px 20px;
-`
-
 export const Portada = styled.div`
     // border: 1px solid black;
 
@@ -45,12 +36,4 @@ export const MainContainer = styled.main`
 
     padding: 30px 0;
     text-align: center;
-`
-
-export const FooterContainer = styled.footer`
-    // border: 1px solid black;
-
-    padding: 20px;
-    display: flex;
-    justify-content: center;
 `

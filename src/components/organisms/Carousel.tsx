@@ -12,8 +12,6 @@ export const Carousel = () => {
     setCard(card => (card === 0 ? proyectos.length - 1 : card - 1))
   }
 
-  console.log(prev)
-
   const next = () => {
     setCard((card) => (card === proyectos.length - 1 ? 0 : card + 1));
   };
@@ -31,6 +29,7 @@ export const Carousel = () => {
         {proyectos.map((proyecto) => {
           return (
             <Card
+              key={proyecto.name}
               titulo={proyecto.name}
               imagenPortada={proyecto.image}
               tech={proyecto.tech}
