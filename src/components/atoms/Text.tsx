@@ -5,9 +5,10 @@ interface TextProps {
     type: string;
     color: string;
     text: string | undefined;
+    style?: React.CSSProperties;
 }
 
-export const Text = ({type, color, text}: TextProps) => {
+export const Text = ({type, color, text, style}: TextProps) => {
 
     const textColor =
       color === "lightSteelBlue"
@@ -28,17 +29,17 @@ export const Text = ({type, color, text}: TextProps) => {
 
     switch (type) {
         case "h1":
-            return <Heading1 color={textColor}>{text}</Heading1>
+            return <Heading1 color={textColor} style={style}>{text}</Heading1>
         case "h2":
-            return <Heading2 color={textColor}>{text}</Heading2>;
+            return <Heading2 color={textColor} style={style}>{text}</Heading2>;
         case "h3":
-            return <Heading3 color={textColor}>{text}</Heading3>;
+            return <Heading3 color={textColor} style={style}>{text}</Heading3>;
         case "h4":
-            return <Heading4 color={textColor}>{text}</Heading4>;
+            return <Heading4 color={textColor} style={style}>{text}</Heading4>;
         case "p1":
-            return <Text1 color={textColor}>{text}</Text1>;
+            return <Text1 color={textColor} style={style}>{text}</Text1>;
         case "p2":
-            return <Text2 color={textColor}>{text}</Text2>;
+            return <Text2 color={textColor} style={style}>{text}</Text2>;
         default:
             return <p>{text}</p>
     }
