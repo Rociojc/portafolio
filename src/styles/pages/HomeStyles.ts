@@ -15,6 +15,7 @@ export const InfoPortada = styled.div`
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     justify-items: center;
+    align-items: center;
 `
 
 export const TituloPortada = styled.div`

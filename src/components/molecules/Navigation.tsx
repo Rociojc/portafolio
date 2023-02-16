@@ -7,6 +7,7 @@ interface NavigationProps {
 }
 
 export const Navigation = ({type}: NavigationProps) => {
+
   const navigate = useNavigate();
 
   return (

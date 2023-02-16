@@ -1,6 +1,6 @@
 import { Icon } from "../components/atoms/Icon"
 import { Text } from "../components/atoms/Text"
-import { CVCaption, CVContainer, CVInfoDetailed, CVInfoGeneral } from "../styles/pages/CVStyles"
+import { CVCaption, CVContainer, CVInfoDetailed, CVInfoGeneral, Lista } from "../styles/pages/CVStyles"
 
 export const CV = () => {
   return (
@@ -64,7 +64,7 @@ export const CV = () => {
           <Text type="h3" color="indianRed" text="SKILLS" />
         </CVCaption>
         <CVInfoDetailed>
-          <ul style={{padding: "0 20px"}}>
+          <Lista>
             <li><Text type="p1" color="black" text="HTML5" /></li>
             <li><Text type="p1" color="black" text="CSS3" /></li>
             <li><Text type="p1" color="black" text="Flexbox" /></li>
@@ -74,7 +74,7 @@ export const CV = () => {
             <li><Text type="p1" color="black" text="SASS" /></li>
             <li><Text type="p1" color="black" text="Javascript" /></li>
             <li><Text type="p1" color="black" text="React" /></li>
-          </ul>
+          </Lista>
         </CVInfoDetailed>
         </article>
         <article>
@@ -97,9 +97,11 @@ export const CV = () => {
           <Text type="h3" color="indianRed" text="PROFESIONAL SKILLS" />
         </CVCaption>
         <CVInfoDetailed>
-          <Text type="p1" color="black" text="Responsable" />
-          <Text type="p1" color="black" text="Organizada" />
-          <Text type="p1" color="black" text="Trabajo en equipo" />
+          <Lista>
+            <li><Text type="p1" color="black" text="Responsable" /></li>
+            <li><Text type="p1" color="black" text="Organizada" /></li>
+            <li><Text type="p1" color="black" text="Trabajo en equipo" /></li>
+          </Lista>
         </CVInfoDetailed>
         </article>
       </CVInfoGeneral>

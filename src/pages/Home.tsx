@@ -1,10 +1,8 @@
 import { Image } from "../components/atoms/Image";
 import { Text } from "../components/atoms/Text";
-import { Navigation } from "../components/molecules/Navigation";
 import { Carousel } from "../components/organisms/Carousel";
 import { ImagenPortada, InfoPortada, MainContainer, Portada, TituloPortada } from "../styles/pages/HomeStyles";
 import imagenPerfil from "../assets/img/foto_perfil.png";
-import { SocialMedia } from "../components/molecules/SocialMedia";
 
 export const Home = () => {
   return (

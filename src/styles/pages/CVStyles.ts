@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const CVContainer = styled.main`
-    border: 1px solid black;
+    /* border: 1px solid black; */
 
     padding: 20px;
     text-align: center;
@@ -25,4 +25,8 @@ export const CVCaption = styled.div`
 
 export const CVInfoDetailed = styled.div`
     padding-top: 15px;
+`
+
+export const Lista = styled.ul`
+    padding:  0 20px;
 `

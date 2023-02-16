@@ -8,7 +8,7 @@ interface IconButtonProps {
   name: string;
   text: string;
   click?: React.MouseEventHandler<HTMLButtonElement>;
-  style?: any;
+  style?: React.CSSProperties;
 }
 
 export const Button = ({type, name, text, click, style}: IconButtonProps) => {

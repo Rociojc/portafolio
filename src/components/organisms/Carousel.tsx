@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { proyectos } from "../../data/Proyecto";
 import { BotonCarousel, BotonesContainer, CardsContainer } from "../../styles/organisms/CarouselStyle";
 import { Card } from "../molecules/Card";
@@ -7,6 +7,13 @@ import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 
 export const Carousel = () => {
   const [ card, setCard ] = useState(1);
+  const [ mobile, setMobile ] = useState(true);
+
+  useEffect(() => {
+    const responsive = () => window.innerWidth < 768 ? (setCard(1), setMobile(true)) : (setCard(0), setMobile(false));
+    responsive();
+    window.addEventListener("resize", ()=>responsive())
+  }, [])
 
   const prev = () => {
     setCard(card => (card === 0 ? proyectos.length - 1 : card - 1))
@@ -37,7 +44,9 @@ export const Carousel = () => {
           );
         })}
       </div>
-      <BotonesContainer>
+      {
+        mobile && 
+        <BotonesContainer>
         <BotonCarousel onClick={prev} color="lightSteelBlue">
           <ChevronLeftIcon />
         </BotonCarousel>
@@ -45,6 +54,7 @@ export const Carousel = () => {
           <ChevronRightIcon />
         </BotonCarousel>
       </BotonesContainer>
+      }
     </CardsContainer>
   );
 }
