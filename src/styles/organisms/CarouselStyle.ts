@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const CardsContainer = styled.section`
+export const CardsContainer = styled.div`
     overflow: hidden;
     position: relative;
 `

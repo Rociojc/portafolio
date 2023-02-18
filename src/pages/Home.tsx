@@ -1,14 +1,15 @@
 import { Image } from "../components/atoms/Image";
 import { Text } from "../components/atoms/Text";
 import { Carousel } from "../components/organisms/Carousel";
-import { ImagenPortada, InfoPortada, MainContainer, Portada, TituloPortada } from "../styles/pages/HomeStyles";
+import { GridPortada, ImagenPortada, MainContainer, Portada, Proyectos, TituloPortada } from "../styles/pages/HomeStyles";
 import imagenPerfil from "../assets/img/foto_perfil.png";
 
 export const Home = () => {
   return (
     <>
-      <Portada color="lightSteelBlue">
-        <InfoPortada>
+      <MainContainer>
+        <Portada color="lightSteelBlue">
+          <GridPortada>
           <TituloPortada>
             <Text type="h1" color="indianRed" text="Rocio Jimenez" />
             <Text type="p1" color="brown" text="Desarrollador Frontend" />
@@ -16,11 +17,11 @@ export const Home = () => {
           <ImagenPortada>
             <Image url={imagenPerfil} widht="100%" />
           </ImagenPortada>
-        </InfoPortada>
+          </GridPortada>
       </Portada>
-      <MainContainer>
+      <Proyectos>
         <div style={{ marginBottom: "20px" }}>
-          <Text type="h3" color="black" text="MIS PROYECTOS" />
+          <Text type="h3" color="indianRed" text="MIS PROYECTOS" />
           <Text
             type="p1"
             color="black"
@@ -28,6 +29,7 @@ export const Home = () => {
           />
         </div>
         <Carousel />
+      </Proyectos>
       </MainContainer>
     </>
   );

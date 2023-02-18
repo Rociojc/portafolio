@@ -4,8 +4,8 @@ import { SocialMedia } from "../molecules/SocialMedia"
 export const FooterLayout = () => {
   return (
     <>
-    <hr style={{ width: "95%", margin: "auto" }} />
     <FooterContainer>
+      <hr style={{ width: "95%", margin: "0 auto" }} />
       <SocialMedia />
     </FooterContainer>
     </>

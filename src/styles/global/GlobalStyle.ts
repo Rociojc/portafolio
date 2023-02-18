@@ -13,6 +13,28 @@ export const GlobalStyle = createGlobalStyle`
 
     body {
         font-family: 'Roboto', sans-serif;
-        min-height: 100%;
+        height: 100%;
     }
+
+    #root {
+        display: grid;
+        width: 100%;
+        min-height: 100%;
+        grid-template: 
+            "header" 100px
+            "main" auto
+            "footer" 70px;
+    }
+
+    /* header {
+        border: 1px solid black;
+    }
+
+    main {
+        border: 1px solid black;
+    }
+
+    footer {
+        border: 1px solid black;
+    } */
 `

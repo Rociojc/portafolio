@@ -31,3 +31,19 @@ export const AboutInfo = styled.div`
         grid-row: 2 / 3;
     }
 `
+
+export const Parrafo1 = styled.div`
+    text-align: justify;
+
+    @media (min-width: 768px) {
+        grid-row: 2 / 3;
+    }
+`
+
+export const Parrafo2 = styled.div`
+    text-align: justify;
+
+    @media (min-width: 768px) {
+        grid-column: 1 / 3;
+    }
+`
