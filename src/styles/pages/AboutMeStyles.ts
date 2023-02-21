@@ -7,10 +7,14 @@ export const AboutContainer = styled.main`
     display: grid;
     gap: 20px;
     justify-items: center;
+    max-width: 900px;
+    margin: auto;
 
     @media (min-width: 768px) {
         padding: 30px;
         grid-template-columns: repeat(2, 1fr);
+        height: 80%;
+
     }
 `
 

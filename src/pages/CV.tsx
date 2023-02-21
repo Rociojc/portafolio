@@ -1,5 +1,6 @@
 import { Icon } from "../components/atoms/Icon"
 import { Text } from "../components/atoms/Text"
+import { TituloInfoCv } from "../components/molecules/TituloInfoCv"
 import { CVCaption, CVContainer, CVInfoDetailed, CVInfoGeneral, Lista } from "../styles/pages/CVStyles"
 
 export const CV = () => {

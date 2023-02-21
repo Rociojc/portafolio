@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import { DesingSystem } from "./components/DesingSystem";
 import { FooterLayout } from "./components/layout/FooterLayout";
 import { NavLayout } from "./components/layout/NavLayout";
@@ -9,7 +9,7 @@ import { GlobalStyle } from "./styles/global/GlobalStyle";
 
 function App() {
   return (
-    <BrowserRouter>
+    <>
       <GlobalStyle />
       <NavLayout/>
       <Routes>
@@ -19,7 +19,7 @@ function App() {
       </Routes>
       <FooterLayout/>
       {/* <DesingSystem/> */}
-    </BrowserRouter>
+    </>
   );
 }
 
