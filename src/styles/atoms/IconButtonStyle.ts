@@ -21,10 +21,6 @@ export const ButtonText = styled.button`
     cursor: pointer;
     transition:  0.3s ease-in-out;
 
-    /* &:hover {
-        background-color: #F5A09F;
-    } */
-
     &:hover::after,
     &.active::after {
         content: "";

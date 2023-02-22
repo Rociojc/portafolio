@@ -32,8 +32,6 @@ export const TituloPortada = styled.div`
 `
 
 export const ImagenPortada = styled.div`
-    /* border: 1px solid black; */
-
     width: 210px;
     height: 220px;
 
@@ -43,8 +41,6 @@ export const ImagenPortada = styled.div`
 `
 
 export const Proyectos = styled.section`
-    /* border: 1px solid black; */
-
     padding: 20px 0;
     text-align: center;
     width: 425px;

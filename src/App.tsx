@@ -1,5 +1,4 @@
 import { Route, Routes } from "react-router-dom";
-import { DesingSystem } from "./components/DesingSystem";
 import { FooterLayout } from "./components/layout/FooterLayout";
 import { NavLayout } from "./components/layout/NavLayout";
 import { AboutMe } from "./pages/AboutMe";
@@ -19,7 +18,6 @@ function App() {
         <Route path="/cv" element={<CV />}/>
       </Routes>
       <FooterLayout/>
-      {/* <DesingSystem/> */}
     </>
   );
 }

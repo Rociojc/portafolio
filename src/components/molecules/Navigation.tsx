@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import { NavContainer } from "../../styles/molecules/NavigationStyle";
@@ -20,7 +19,7 @@ export const Navigation = ({type}: NavigationProps) => {
   return (
     <NavContainer>
       <Button type={type} text="Inicio" name="icon-home" click={() => navigate("/home")} className={isActiveHome ? "active" : ""}/>
-      <Button type={type} text="Acerca de me" name="icon-person" click={() => navigate("/about-me")} className={isActiveAboutMe ? "active" : ""}/>
+      <Button type={type} text="Acerca de mi" name="icon-person" click={() => navigate("/about-me")} className={isActiveAboutMe ? "active" : ""}/>
       <Button type={type} text="CV" name="icon-document" click={() => navigate("/cv")} className={isActiveCV ? "active" : ""}/>
     </NavContainer>
   );

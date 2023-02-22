@@ -4,6 +4,7 @@ import iconDocument from "../assets/icons/document-attach.svg";
 import iconLinkedin from "../assets/icons/linkedin.svg";
 import iconGitHub from "../assets/icons/github.svg";
 import iconTwitter from "../assets/icons/twitter.svg";
+import iconEmail from "../assets/icons/email.svg";
 import iconExperiencia from "../assets/icons/experiencia.svg";
 import iconEducacion from "../assets/icons/educacion.svg";
 import iconSkills from "../assets/icons/skills.svg";
@@ -41,6 +42,10 @@ export const iconos: IconoType[] = [
   {
     name: "icon-twitter",
     url: iconTwitter,
+  },
+  {
+    name: "icon-email",
+    url: iconEmail,
   },
   {
     name: "icon-experiencia",

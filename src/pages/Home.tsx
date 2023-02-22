@@ -22,11 +22,11 @@ export const Home = () => {
       <Proyectos>
         <div style={{ marginBottom: "20px" }}>
           <Text type="h3" color="indianRed" text="MIS PROYECTOS" />
-          <Text
+          {/* <Text
             type="p1"
             color="black"
             text="Lorem ipsum dolor sit amet consectetur."
-          />
+          /> */}
         </div>
         <Carousel />
       </Proyectos>

@@ -25,16 +25,4 @@ export const GlobalStyle = createGlobalStyle`
             "main" auto
             "footer" 70px;
     }
-
-    /* header {
-        border: 1px solid black;
-    }
-
-    main {
-        border: 1px solid black;
-    }
-
-    footer {
-        border: 1px solid black;
-    } */
 `
