@@ -9,9 +9,10 @@ interface IconButtonProps {
   text: string;
   click?: React.MouseEventHandler<HTMLButtonElement>;
   style?: React.CSSProperties;
+  className?: string | undefined;
 }
 
-export const Button = ({type, name, text, click, style}: IconButtonProps) => {
+export const Button = ({type, name, text, click, style, className}: IconButtonProps) => {
   switch (type) {
     case "icono":
       return (
@@ -21,7 +22,7 @@ export const Button = ({type, name, text, click, style}: IconButtonProps) => {
       );
     case "texto":
       return (
-        <ButtonText onClick={click} style={style}>
+        <ButtonText className={className} onClick={click} style={style}>
           <Text type="h3" color="crimson" text={text} />
         </ButtonText>
       );

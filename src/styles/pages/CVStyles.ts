@@ -21,15 +21,6 @@ export const CVInfoGeneral = styled.section`
     gap: 30px;
 `
 
-export const CVCaption = styled.div`
-    display: flex;
-    gap: 10px;
-    padding: 5px;
-    align-items: center;
-    border-top: 2px solid ${props => props.color};
-    border-bottom: 2px solid ${props => props.color};
-`
-
 export const CVInfoDetailed = styled.div`
     padding-top: 15px;
 `

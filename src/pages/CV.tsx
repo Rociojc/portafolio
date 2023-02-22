@@ -1,7 +1,7 @@
 import { Icon } from "../components/atoms/Icon"
 import { Text } from "../components/atoms/Text"
-import { TituloInfoCv } from "../components/molecules/TituloInfoCv"
-import { CVCaption, CVContainer, CVInfoDetailed, CVInfoGeneral, Lista } from "../styles/pages/CVStyles"
+import { CVCaption } from "../components/molecules/CVCaption"
+import { CVContainer, CVInfoDetailed, CVInfoGeneral, Lista } from "../styles/pages/CVStyles"
 
 export const CV = () => {
   return (
@@ -9,10 +9,7 @@ export const CV = () => {
       <Text type="h2" color="indianRed" text="Curriculum Vitae" />
       <CVInfoGeneral>
         <article>
-        <CVCaption color="lightSteelBlue">
-          <Icon name="icon-experiencia" />
-          <Text type="h3" color="indianRed" text="EXPERIENCIA" />
-        </CVCaption>
+        <CVCaption iconName="icon-experiencia" text="EXPERIENCIA"/>
         <CVInfoDetailed>
           <Text type="p1" color="black" style={{fontWeight: "bold"}} text="Tech Developer" />
           <Text type="p1" color="black" text="Agosto 2022 - Septiembre 2022 - Rent me up" />
@@ -36,10 +33,7 @@ export const CV = () => {
         </CVInfoDetailed>
         </article>
         <article>
-        <CVCaption color="lightSteelBlue">
-          <Icon name="icon-educacion" />
-          <Text type="h3" color="indianRed" text="EDUCACION" />
-        </CVCaption>
+        <CVCaption iconName="icon-educacion" text="EDUCACION" />
         <CVInfoDetailed>
           <Text type="p1" color="black" style={{fontWeight: "bold"}} text="Tech Developer" />
           <Text type="p1" color="black" text="Digital House | Octubre 2021 - Actualmente" />
@@ -60,10 +54,7 @@ export const CV = () => {
         </CVInfoDetailed>
         </article>
         <article>
-        <CVCaption color="lightSteelBlue">
-          <Icon name="icon-skills" />
-          <Text type="h3" color="indianRed" text="SKILLS" />
-        </CVCaption>
+        <CVCaption iconName="icon-skills" text="SKILLS" />
         <CVInfoDetailed>
           <Lista>
             <li><Text type="p1" color="black" text="HTML5" /></li>
@@ -79,10 +70,7 @@ export const CV = () => {
         </CVInfoDetailed>
         </article>
         <article>
-        <CVCaption color="lightSteelBlue">
-          <Icon name="icon-lenguaje" />
-          <Text type="h3" color="indianRed" text="LANGUAGES" />
-        </CVCaption>
+        <CVCaption iconName="icon-lenguaje" text="LANGUAGES" />
         <CVInfoDetailed>
           <Text type="p1" color="black" style={{fontWeight: "bold"}} text="Español" />
           <Text type="p1" color="black" text="Nativo" />
@@ -93,10 +81,7 @@ export const CV = () => {
         </CVInfoDetailed>
         </article>
         <article>
-        <CVCaption color="lightSteelBlue">
-          <Icon name="icon-profesional-skills" />
-          <Text type="h3" color="indianRed" text="PROFESIONAL SKILLS" />
-        </CVCaption>
+        <CVCaption iconName="icon-profesional-skills" text="PROFESIONAL SKILLS"/>
         <CVInfoDetailed>
           <Lista>
             <li><Text type="p1" color="black" text="Responsable" /></li>

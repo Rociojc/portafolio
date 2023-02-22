@@ -4,7 +4,7 @@ import { Image } from "./atoms/Image";
 import { Text } from "./atoms/Text";
 import { Card } from "./molecules/Card";
 import { Navigation } from "./molecules/Navigation";
-import { TituloInfoCv } from "./molecules/TituloInfoCv";
+import { CVCaption } from "./molecules/CVCaption";
 import { SocialMedia } from "./molecules/SocialMedia";
 import imagenPerfil from "../assets/img/foto_perfil.png";
 import imagenRentMeUp from "../assets/img/desktop_home_ db.png";
@@ -105,14 +105,11 @@ export const DesingSystem = () => {
           padding: "15px",
         }}
       >
-        <TituloInfoCv iconName="icon-experiencia" text="EXPERIENCIA" />
-        <TituloInfoCv iconName="icon-educacion" text="EDUCACION" />
-        <TituloInfoCv iconName="icon-skills" text="SKILLS" />
-        <TituloInfoCv iconName="icon-lenguaje" text="LANGUAGES" />
-        <TituloInfoCv
-          iconName="icon-profesional-skills"
-          text="PROFESIONAL SKILLS"
-        />
+        <CVCaption iconName="icon-experiencia" text="EXPERIENCIA" />
+        <CVCaption iconName="icon-educacion" text="EDUCACION" />
+        <CVCaption iconName="icon-skills" text="SKILLS" />
+        <CVCaption iconName="icon-lenguaje" text="LANGUAGES" />
+        <CVCaption iconName="icon-profesional-skills" text="PROFESIONAL SKILLS"/>
       </div>
       <hr />
       <h2 style={{ padding: "15px" }}>Redes Sociales</h2>
