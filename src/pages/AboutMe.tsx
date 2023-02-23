@@ -13,10 +13,10 @@ export const AboutMe = () => {
         <Image url={imagenAboutMe}/>
       </AboutImage>
       <Parrafo1>
-        <Text type="p1" color="black" text="Soy Rocio Jimenez, desarrolladora Front End Jr, cuento con 1 año de experiencia en el desarrollo de paginas web responsives, tengo conocimentos en Html, Css, Javascript, Figma, Github, Gitlab y React. Durante este año he realizado diferentes proyectos que me han ayudado a poner en practicas mis conocimientos. En este momento me estoy especializando en desarrollo Front End, utilizando React y TypeScript." />
+        <Text type="p1" color="black" text="Rocío Jiménez es una desarrolladora Front End Jr con un año de experiencia en el desarrollo de páginas web responsivas. Ella posee habilidades en HTML, CSS, JavaScript, Figma, Github, Gitlab y React. A lo largo de su carrera, ha realizado diversos proyectos que le han permitido poner en práctica sus conocimientos. Actualmente, se está especializando en el desarrollo Front End utilizando React y TypeScript." />
       </Parrafo1>
       <Parrafo2>
-        <Text type="p1" color="black" text="Soy de Bogotá-Colombia, actualmente vivo en Cali-Colombia, me gusta mucho la naturaleza, hacer caminatas y conocer lugares nuevos, me encanta la comida Italiana y mi sueño es conocer Italia y probar la autentica pasta." />
+        <Text type="p1" color="black" text="Rocío es originaria de Bogotá, Colombia, aunque actualmente reside en Cali. Tiene un gran amor por la naturaleza, disfrutando de caminatas y explorar nuevos lugares. También es una entusiasta de la comida italiana y sueña con viajar a Italia para probar la pasta auténtica." />
       </Parrafo2>
     </AboutContainer>
   )
